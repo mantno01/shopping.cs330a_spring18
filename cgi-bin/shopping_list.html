@@ -1,0 +1,41 @@
+<html>
+<body>
+<h1> Chopping Liszt </h1>
+name<input type = text id = name />
+quantity <select id = quantity>
+	<option value=1>1</option>
+	<option value=2>2</option>
+	<option value=3>3</option>
+	<option value=4>4</option>
+	<option value=5>5</option>
+	<option value=6>6</option>
+	<option value=7>7</option>
+	<option value=8>8</option>
+	<option value=9>9</option>
+	<option value=10>10</option>
+</select>
+store<select id = store>
+	<option value="fareway">Fareway</option>
+	<option value="hyvee">HyVee</option>
+	<option value="coop">Food Co-Op</option>
+	<option value="walmart">Walmart</option>
+</select>
+section <select id = section>
+<!--I want this to be able to dynamically change depending on store-->
+		<option value="produce">Produce</option>
+		<option value="dairy">Dairy</option>
+		<option value="meat">Meat</option>
+		<option value="bakery">Bakery</option>
+		<option value="pharmacy">Pharmacy</option>
+		<option value="clothing">Clothing</option>
+</select>
+
+price <input type=text id=price />
+
+<button id=add onclick="clickedOn()"> Add </button>
+
+
+
+
+</body>
+</html>

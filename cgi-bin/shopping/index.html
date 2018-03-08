@@ -1,0 +1,61 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<div class="container">
+<body>
+<h1> Chopping Liszt </h1>
+name<input type = text id = name />
+quantity <select id = qty>
+	<option value=1>1</option>
+	<option value=2>2</option>
+	<option value=3>3</option>
+	<option value=4>4</option>
+	<option value=5>5</option>
+	<option value=6>6</option>
+	<option value=7>7</option>
+	<option value=8>8</option>
+	<option value=9>9</option>
+	<option value=10>10</option>
+</select>
+store<select id = store>
+	<option value="fareway">Fareway</option>
+	<option value="hyvee">HyVee</option>
+	<option value="coop">Food Co-Op</option>
+	<option value="walmart">Walmart</option>
+</select>
+section <select id = section>
+<!--I want this to be able to dynamically change depending on store-->
+		<option value="produce">Produce</option>
+		<option value="dairy">Dairy</option>
+		<option value="meat">Meat</option>
+		<option value="bakery">Bakery</option>
+		<option value="pharmacy">Pharmacy</option>
+		<option value="clothing">Clothing</option>
+</select>
+
+price <input type=text id=price />
+
+priority<select id = priority> <option value="high"> High</option>
+							   <option value="medium"> Medium</option>
+							   <option value="low">Low</option>
+							</select>
+
+<button id=add onclick="clickedOn()"> Add </button>
+<table class= "table table-striped">
+<thead>
+</thead>
+<tbody id= listtab> </tbody>
+</table>
+
+</div>
+<script src=model.js type=text/javascript></script>
+<script src=view.js type=text/javascript></script>
+<script src=controller.js type=text/javascript></script>
+
+</body>
+</html>
